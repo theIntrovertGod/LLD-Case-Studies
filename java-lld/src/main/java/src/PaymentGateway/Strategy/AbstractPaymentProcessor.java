@@ -21,3 +21,9 @@ public abstract class AbstractPaymentProcessor implements PaymentProcessor{
 
     protected abstract PaymentResponse doProcess(PaymentRequest request);
 }
+
+//singleton
+//Builder
+//        Factory
+//Strategy
+//                Observer
