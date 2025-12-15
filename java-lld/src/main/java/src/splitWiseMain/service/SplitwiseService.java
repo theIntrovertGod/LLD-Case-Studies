@@ -20,8 +20,13 @@ public class SplitwiseService {
 
     public User addUser(String name, String email) {
         User user = new User(name, email);
-        users.put(user.getName(), user);
+        users.put(user.getId(), user);
         return user;
+    }
+
+    public void showBalanceSheet(String userId) {
+        User user = users.get(userId);
+        user.getBalanceSheet().showBalances();
     }
     public Group addGroup(String groupName, List<User> members) {
         Group group = new Group(groupName, members);

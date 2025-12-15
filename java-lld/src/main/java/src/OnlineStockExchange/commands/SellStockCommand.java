@@ -13,7 +13,7 @@ public class SellStockCommand implements OrderCommand{
     public SellStockCommand(Account account, Order order) {
         this.account = account;
         this.order = order;
-        this.stockExchange = StockExchange.;
+        this.stockExchange = StockExchange;
     }
 
     @Override
